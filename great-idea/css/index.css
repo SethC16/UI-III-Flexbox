@@ -153,45 +153,364 @@ h5 {
 body {
   padding: 20px;
 }
-.links nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	word-spacing: 200px;
-	padding: 20px;
-}
-a:link {
-	text-decoration: none;
-} 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-.logo {
-  padding-left: 10px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ /* ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ /* ul {
+  list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container {
+	width: 90%;
+	margin: 40px auto 0 auto;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+nav a {
+	text-decoration: none;
+	color: rgb(155, 155, 155);
+	/* margin-left: 4%; */
+}   
+nav a:visited {
+	text-decoration: none;
+}
+ .logo {
+	width: 110%;
+  }
+
 .h1 {
   font-size: 72px;
 }
 
 .innovation {
-	display: flex;
-	flex-direction: column;	
 	text-align: center;
 	position: relative;
-	padding-left: 10%;
-	padding-top: 5%;
-	padding-right: 10%;
+	bottom: 50px;
 }
 .button {
-	font-size: 25px;
-	padding-left: 25;
+	text-decoration: none;
+	border: 1px solid black;
+	width:40%;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 1.1rem;
+	color:rgb(8, 112, 197);
+	border-radius: 5px;
+	/* background-color: rgb(108, 177, 233); */
+}
+.button:hover {
+   background-color: rgb(108, 177, 233);
+   color: white;
+   transition: .6s;
+   border: 3px solid rgb(120, 95, 235);
 }
 .imgtwo {
-  display: flex;
-  flex-direction: flex-end;
-  padding-bottom: 5%;
+	width: 40%;
+	padding-bottom: 5%;
+	margin-top: 3%;
 }
 .middle {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	
 }
 
 .first {
@@ -238,65 +557,6 @@ footer {
   word-spacing: 1px;
 }
 /* Page2 code */
-#page2 body {
-	padding: 20px;
-  }
-#page2 .links nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	word-spacing: 200px;
-	padding: 20px;
-  }
-#page2 a:link {
-	text-decoration: none;
-}  
 
-#page2 .logo {
-	padding-left: 10px;
-  }
-#page2 .headerimg {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-}
-#page2 .services {
-		word-spacing: 2px;
-		margin-bottom: 40px;
-		padding-top: 40px; 
-		padding-bottom: 40px;
-		border-bottom: 1px solid black;
-  } 
-#page2 h1 {
-	font-size: 30px;
-}
-#page2 .box {
-	  border: 1px solid black;
-	  background-color: lightgray;
-	  width: 45%;
-	  padding: 2%;
-	  margin: 2%;
-	  height: 30vh;
-  }
-  #page2 .bottom {
-	  display: flex;
-	  flex-wrap: wrap;
-	  border-bottom: 1px solid black;
-	  padding: 4%;
-
-  }
-  #page2 .facts {
-	  display:flex;
-  }
-  #page2 .some {
-	list-style-position: inside;  
-	padding-top: 40px;
-  }
-  #page2 .infoimg {
-	  padding-top: 2%;
-  }
-  #page2 p {
-	line-height: 1.2;
-  }
 	
 
